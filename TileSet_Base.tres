@@ -1,0 +1,103 @@
+[gd_resource type="TileSet" load_steps=10 format=2]
+
+[ext_resource path="res://Platform/3-1_base.1.0.png" type="Texture" id=1]
+[ext_resource path="res://Platform/3-1_base.7.0.png" type="Texture" id=2]
+[ext_resource path="res://Platform/3-1_base.6.0.png" type="Texture" id=3]
+[ext_resource path="res://Platform/3-1_base.8.0.png" type="Texture" id=4]
+[ext_resource path="res://Platform/3-1_base.2.0.png" type="Texture" id=5]
+[ext_resource path="res://Platform/3-1_base.4.0.png" type="Texture" id=6]
+[ext_resource path="res://Platform/3-1_base.0.0.png" type="Texture" id=7]
+[ext_resource path="res://Platform/3-1_base.5.0.png" type="Texture" id=8]
+[ext_resource path="res://Platform/3-1_base.3.0.png" type="Texture" id=9]
+
+[resource]
+0/name = "3-1_base00"
+0/texture = ExtResource( 7 )
+0/tex_offset = Vector2( 264, 1 )
+0/modulate = Color( 1, 1, 1, 1 )
+0/region = Rect2( 0, 0, 44, 61 )
+0/tile_mode = 0
+0/occluder_offset = Vector2( 22, 30.5 )
+0/navigation_offset = Vector2( 22, 30.5 )
+0/shapes = [  ]
+0/z_index = 0
+1/name = "3-1_base10"
+1/texture = ExtResource( 1 )
+1/tex_offset = Vector2( 0, 0 )
+1/modulate = Color( 1, 1, 1, 1 )
+1/region = Rect2( 0, 0, 308, 163 )
+1/tile_mode = 0
+1/occluder_offset = Vector2( 154, 81.5 )
+1/navigation_offset = Vector2( 154, 81.5 )
+1/shapes = [  ]
+1/z_index = 0
+2/name = "3-1_base20"
+2/texture = ExtResource( 5 )
+2/tex_offset = Vector2( 0, 0 )
+2/modulate = Color( 1, 1, 1, 1 )
+2/region = Rect2( 0, 0, 308, 201 )
+2/tile_mode = 0
+2/occluder_offset = Vector2( 154, 100.5 )
+2/navigation_offset = Vector2( 154, 100.5 )
+2/shapes = [  ]
+2/z_index = 0
+3/name = "3-1_base30"
+3/texture = ExtResource( 9 )
+3/tex_offset = Vector2( 0, 0 )
+3/modulate = Color( 1, 1, 1, 1 )
+3/region = Rect2( 0, 0, 308, 201 )
+3/tile_mode = 0
+3/occluder_offset = Vector2( 154, 100.5 )
+3/navigation_offset = Vector2( 154, 100.5 )
+3/shapes = [  ]
+3/z_index = 0
+4/name = "3-1_base40"
+4/texture = ExtResource( 6 )
+4/tex_offset = Vector2( 0, 0 )
+4/modulate = Color( 1, 1, 1, 1 )
+4/region = Rect2( 0, 0, 308, 169 )
+4/tile_mode = 0
+4/occluder_offset = Vector2( 154, 84.5 )
+4/navigation_offset = Vector2( 154, 84.5 )
+4/shapes = [  ]
+4/z_index = 0
+5/name = "3-1_base50"
+5/texture = ExtResource( 8 )
+5/tex_offset = Vector2( 0, 0 )
+5/modulate = Color( 1, 1, 1, 1 )
+5/region = Rect2( 0, 0, 308, 157 )
+5/tile_mode = 0
+5/occluder_offset = Vector2( 154, 78.5 )
+5/navigation_offset = Vector2( 154, 78.5 )
+5/shapes = [  ]
+5/z_index = 0
+6/name = "3-1_base60"
+6/texture = ExtResource( 3 )
+6/tex_offset = Vector2( 0, 0 )
+6/modulate = Color( 1, 1, 1, 1 )
+6/region = Rect2( 0, 0, 38, 61 )
+6/tile_mode = 0
+6/occluder_offset = Vector2( 19, 30.5 )
+6/navigation_offset = Vector2( 19, 30.5 )
+6/shapes = [  ]
+6/z_index = 0
+7/name = "3-1_base70"
+7/texture = ExtResource( 2 )
+7/tex_offset = Vector2( 0, 0 )
+7/modulate = Color( 1, 1, 1, 1 )
+7/region = Rect2( 0, 0, 1308, 224 )
+7/tile_mode = 0
+7/occluder_offset = Vector2( 654, 112 )
+7/navigation_offset = Vector2( 654, 112 )
+7/shapes = [  ]
+7/z_index = 0
+8/name = "3-1_base80"
+8/texture = ExtResource( 4 )
+8/tex_offset = Vector2( 0, 0 )
+8/modulate = Color( 1, 1, 1, 1 )
+8/region = Rect2( 0, 0, 38, 61 )
+8/tile_mode = 0
+8/occluder_offset = Vector2( 19, 30.5 )
+8/navigation_offset = Vector2( 19, 30.5 )
+8/shapes = [  ]
+8/z_index = 0

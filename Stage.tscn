@@ -1,0 +1,65 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Player.tscn" type="PackedScene" id=1]
+[ext_resource path="res://TileSet_Air.tres" type="TileSet" id=2]
+[ext_resource path="res://TileSet_Base.tres" type="TileSet" id=3]
+[ext_resource path="res://icon.png" type="Texture" id=4]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 31.8179, 31.7701 )
+
+[node name="Stage" type="Node2D"]
+__meta__ = {
+"_edit_vertical_guides_": [  ]
+}
+
+[node name="Player" parent="." instance=ExtResource( 1 )]
+position = Vector2( 461.515, 121.083 )
+z_index = 1
+z_as_relative = false
+
+[node name="Ground" type="Node2D" parent="."]
+position = Vector2( 3, 113 )
+
+[node name="TileMap_Air" type="TileMap" parent="Ground"]
+position = Vector2( 84, 66 )
+tile_set = ExtResource( 2 )
+cell_size = Vector2( 8, 64 )
+format = 1
+tile_data = PoolIntArray( 262161, 0, 0, 262165, 4, 0, 262175, 1, 0, 262185, 2, 0, 262195, 1, 0, 262205, 2, 0, 262215, 4, 0, 262225, 5, 0 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Ground/TileMap_Air"]
+visible = false
+position = Vector2( 401.637, 268.064 )
+scale = Vector2( 8.08157, 0.2304 )
+texture = ExtResource( 4 )
+
+[node name="KinematicBody2D" type="KinematicBody2D" parent="Ground/TileMap_Air/Sprite"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Ground/TileMap_Air/Sprite/KinematicBody2D"]
+shape = SubResource( 1 )
+one_way_collision = true
+
+[node name="TileMap_Base" type="TileMap" parent="Ground"]
+tile_set = ExtResource( 3 )
+cell_size = Vector2( 308, 64 )
+cell_tile_origin = 2
+format = 1
+tile_data = PoolIntArray( 0, 393225, 0, 393216, 0, 0, 393217, 4, 0, 393218, 3, 0, 393219, 6, 0 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite2" type="Sprite" parent="Ground/TileMap_Base"]
+visible = false
+position = Vector2( 613.019, 398.351 )
+scale = Vector2( 10.5855, 0.2304 )
+texture = ExtResource( 4 )
+
+[node name="KinematicBody2D" type="KinematicBody2D" parent="Ground/TileMap_Base/Sprite2"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Ground/TileMap_Base/Sprite2/KinematicBody2D"]
+shape = SubResource( 1 )
